@@ -17,13 +17,20 @@ URLs are compared without their `#fragment` and trailing slash.
 
 Chrome doesn't let extensions add items to the tab strip's right-click menu, so the page menu, the toolbar icon and the shortcut are the closest options. Chrome's own **Duplicate** on a tab still shows the prompt.
 
+## Install
+
+1. Download `duplicate-tab-guard-<version>.zip` from the [latest release](https://github.com/josephi/duplicate-tab-guard/releases/latest) and unzip it
+2. Open `chrome://extensions`
+3. Turn on **Developer mode** (top-right switch)
+4. Click **Load unpacked** and pick the unzipped folder
+
+Keep the folder where it is: Chrome loads the extension from it on every start. To upgrade, unzip the new release over the old folder and click the reload arrow on the extension's card.
+
+Chrome won't install the zip directly, and it blocks packaged `.crx` files that aren't from the Web Store, so unzipping is the only way for now.
+
 ## Install from source
 
-1. Open `chrome://extensions`
-2. Turn on **Developer mode**
-3. Click **Load unpacked** and pick this folder
-
-After pulling changes, click the reload arrow on the extension's card.
+Clone the repo and use **Load unpacked** on the repo folder. After pulling changes, click the reload arrow on the extension's card.
 
 ## Permissions
 
