@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>👯 Déjà vu!</title>
+  <link rel="stylesheet" href="confirm.css">
+</head>
+<body>
+  <main class="dialog" role="alertdialog" aria-labelledby="heading">
+    <div class="hero" aria-hidden="true">👀</div>
+    <h1 id="heading">Whoa, déjà vu! 👯</h1>
+    <p class="subtitle">You already have this one open. Tab hoarding detected 🐿️</p>
+    <p class="url" id="url"></p>
+    <p class="existing" id="existing" hidden>🗂️ Hanging out in: <strong id="existing-title"></strong></p>
+    <div class="actions">
+      <button id="switch" class="primary">🏃 Take me there</button>
+      <button id="open">🤷 Open anyway</button>
+      <button id="cancel">🙅 Nah, cancel</button>
+    </div>
+    <p class="hint">⏎ Enter: take me there · ⎋ Esc: cancel</p>
+  </main>
+  <script src="confirm.js"></script>
+</body>
+</html>
